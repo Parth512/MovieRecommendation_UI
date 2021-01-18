@@ -7,7 +7,7 @@
 - Intellij/eclipse
 
 ## How to setup?
-- Open https://raw.githubusercontent.com/Parth512/MovieRecommendation_UI/master/src/assets/database.db file and run given two query is mongo shell or mongo GUI
+- Open databse.db file and run given two query is mongo shell or mongo GUI
 - Start spring boot java server
 - Start UI application with following commands
     - npm install
