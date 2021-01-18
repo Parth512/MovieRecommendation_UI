@@ -35,7 +35,7 @@ For JWT – Token based Authentication with Web API, we’re gonna call 2 endpoi
 For Movie - List all movies (unAuthenticated)
 -  GET `/api/auth/movie/list`
   
-For history/watchlist - APIS for handling movie watchlist of user and given recommendation geners acco
+For history/watchlist - APIS for handling movie watchlist of user and given recommendation geners accordingly
 -  GET `/api/history/recommendation` (authenticated)
 -  GET `/api/history/getLast10` (authenticated)
 -  POST `/api/history/add` (authenticated)
