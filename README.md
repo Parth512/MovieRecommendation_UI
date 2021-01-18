@@ -4,10 +4,10 @@
 - Java
 - Node
 - MongoDB
-- Intelij/eclips
+- Intellij/eclipse
 
 ## How to setup?
-- Open database.txt file and run given two query is mongo shell or mongo GUI
+- Open databse.db file and run given two query is mongo shell or mongo GUI
 - Start spring boot java server
 - Start UI application with following commands
     - npm install
@@ -19,12 +19,12 @@ Login
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/login.png?raw=true)
 Register
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/registration.png?raw=true)
-Creting Watch list while register
+Creating Watch list while register
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/selectWatchlistWhileSignup.png?raw=true)
 Movie recommendation
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/Movie-Rec.png?raw=true)
 All movies
-![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/All-movies.png?raw=true)
+![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/allMovies.png?raw=true)
 
 ## API Doc
 
