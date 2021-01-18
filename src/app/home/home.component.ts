@@ -23,8 +23,8 @@ export class HomeComponent implements OnInit {
 
   public config: SwiperConfigInterface = {
     direction: 'horizontal',
-    slidesPerView: 6,
-    spaceBetween: 5,
+    slidesPerView: 5,
+    spaceBetween: 20,
     keyboard: true,
     scrollbar: false,
     navigation: true,
