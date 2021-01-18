@@ -14,6 +14,10 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { MatButtonModule } from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   direction: 'horizontal'
 };
@@ -30,7 +34,11 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SwiperModule
+    SwiperModule,
+    BrowserAnimationsModule,
+    OverlayModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [authInterceptorProviders, {
     provide: SWIPER_CONFIG,

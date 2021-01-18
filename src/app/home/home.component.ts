@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
       });
       this._http.get('/api/history/recommendation', { headers: header }).subscribe((recommendation: any[]) => {
         this.recommendation = recommendation;
-        this._http.get('/api/movie/list', { headers: header }).subscribe((list: any[]) => {
+        this._http.get('/api/auth/movie/list').subscribe((list: any[]) => {
           this.genreWiseProduct = groupBy(list, 'gerne');
         });
       });
