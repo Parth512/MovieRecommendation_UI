@@ -5,6 +5,9 @@
       <li class="nav-item">
         <a href="/home" *ngIf="isLoggedIn" class="nav-link" routerLink="home">Home</a>
       </li>
+      <li class="nav-item">
+        <a href="/all-movies" *ngIf="isLoggedIn" class="nav-link" routerLink="all-movies">All Movies</a>
+      </li>
     </ul>
 
     <ul class="navbar-nav ml-auto" *ngIf="!isLoggedIn">

@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { ProfileComponent } from './profile/profile.component';
+import { AllMoviesComponent } from './all-movies/all-movies.component';
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
@@ -27,7 +28,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     LoginComponent,
     RegisterComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    AllMoviesComponent
   ],
   imports: [
     BrowserModule,
