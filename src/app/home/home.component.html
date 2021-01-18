@@ -1,5 +1,26 @@
-<div class="container">
-  <header class="jumbotron">
-    <p>{{ content }}</p>
-  </header>
+<div *ngIf="currentUser; else loggedOut">
+  <ng-container *ngFor="let item of recommendation">
+    <div *ngIf="genreWiseProduct">{{item}} Movies</div>
+    <swiper class="swiper-container" [config]="config" *ngIf="genreWiseProduct">
+      <div *ngFor="let slide of genreWiseProduct[item]" class="swiper-slide box">
+        <div>
+          {{slide.name}}
+        </div>
+      </div>
+    </swiper>
+  </ng-container>
+
+  <ng-container *ngIf="last10?.length">
+    Last 10
+    <swiper class="swiper-container" [config]="config">
+      <div *ngFor="let slide of last10" class="swiper-slide box">
+        <div>
+          {{slide.name}}
+        </div>
+      </div>
+    </swiper>
+  </ng-container>
 </div>
+<ng-template #loggedOut>
+  Please login.
+</ng-template>

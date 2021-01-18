@@ -1,26 +1,55 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../_services/user.service';
+import Swiper from 'swiper';
+import { groupBy, forIn, each, chunk, find, isUndefined } from 'lodash';
+import { TokenStorageService } from '../_services/token-storage.service';
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
 
   content: string;
+  mySwiper;
+  last10 = [];
+  recommendation;
+  currentUser: any;
+  genreWiseProduct;
+  constructor(private userService: UserService, private _http: HttpClient, private token: TokenStorageService) { }
 
-  constructor(private userService: UserService) { }
+  public config: SwiperConfigInterface = {
+    direction: 'horizontal',
+    slidesPerView: 6,
+    spaceBetween: 5,
+    keyboard: true,
+    scrollbar: false,
+    navigation: true,
+    pagination: false
+  };
 
   ngOnInit(): void {
-    this.userService.getPublicContent().subscribe(
-      data => {
-        this.content = data;
-      },
-      err => {
-        this.content = JSON.parse(err.error).message;
-      }
-    );
+
+    this.currentUser = this.token.getUser();
+    if (this.currentUser) {
+      const header = {
+        "userId": this.currentUser.username
+      };
+      this._http.get('/api/history/getLast10', { headers: header }).subscribe((data: any[]) => {
+        this.last10 = data;
+      });
+      this._http.get('/api/history/recommendation', { headers: header }).subscribe((recommendation: any[]) => {
+        this.recommendation = recommendation;
+        this._http.get('/api/movie/list', { headers: header }).subscribe((list: any[]) => {
+          this.genreWiseProduct = groupBy(list, 'gerne');
+        });
+      });
+    }
+
   }
+
 
 }

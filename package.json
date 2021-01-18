@@ -19,7 +19,12 @@
     "@angular/platform-browser": "~10.0.0",
     "@angular/platform-browser-dynamic": "~10.0.0",
     "@angular/router": "~10.0.0",
+    "@types/lodash": "4.14.120",
+    "@types/swiper": "^3.4.2",
+    "lodash": "^4.17.20",
+    "ngx-swiper-wrapper": "^10.0.0",
     "rxjs": "~6.5.5",
+    "swiper": "^6.4.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.3"
   },
