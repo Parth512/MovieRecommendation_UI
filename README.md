@@ -22,7 +22,7 @@ Register
 Creating Watch list while register
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/selectWatchlistWhileSignup.png?raw=true)
 Movie recommendation
-![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/Movie-Rec.png?raw=true)
+![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/MovieRecommendation.png?raw=true)
 All movies
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/allMovies.png?raw=true)
 
