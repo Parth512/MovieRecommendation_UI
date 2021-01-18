@@ -22,7 +22,7 @@ Register
 Creting Watch list while register
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/selectWatchlistWhileSignup.png?raw=true)
 Movie recommendation
-![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/Movie-Recommendation.png?raw=true)
+![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/Movie-Rec.png?raw=true)
 All movies
 ![alt text](https://github.com/Parth512/MovieRecommendation_UI/blob/master/src/assets/All-movies.png?raw=true)
 
@@ -35,7 +35,7 @@ For JWT – Token based Authentication with Web API, we’re gonna call 2 endpoi
 For Movie - List all movies (unAuthenticated)
 -  GET `/api/auth/movie/list`
   
-For history/watchlist - APIS for handling movie watchlist of user and given recommendation geners acco
+For history/watchlist - APIS for handling movie watchlist of user and given recommendation geners accordingly
 -  GET `/api/history/recommendation` (authenticated)
 -  GET `/api/history/getLast10` (authenticated)
 -  POST `/api/history/add` (authenticated)
