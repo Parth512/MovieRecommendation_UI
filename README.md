@@ -7,7 +7,7 @@
 - Intelij/eclips
 
 ## How to setup?
-- Open [a link]assets/database.db file and run given two query is mongo shell or mongo GUI
+- Open /src/assets/database.db file and run given two query is mongo shell or mongo GUI
 - Start spring boot java server
 - Start UI application with following commands
     - npm install
