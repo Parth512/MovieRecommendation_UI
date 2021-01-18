@@ -1,5 +1,5 @@
 {
   "/api": {
-    "target": "http://10.30.31.129:38081"
+    "target": "http://localhost:38081"
   }
 }
