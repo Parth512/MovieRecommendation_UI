@@ -42,5 +42,33 @@ For history/watchlist - APIS for handling movie watchlist of user and given reco
   
  ## Future enhancement
 
+https://api.spacexdata.com/v4/launches/query
+filter with success = 
+{
+    "query": {
+        "success": true
+    },
+    "options": {
+        "limit": 100
+    }
+}
 
+
+{
+    "query": {
+        "cores.landing_success": true
+    },
+    "options": {
+        "limit": 100
+    }
+}
+
+{
+    "query": {
+        "date_utc": {
+            "$gte": "2015-01-01T00:00:00.000Z",
+            "$lte": "2015-12-31T00:00:00.000Z"
+        }
+    }
+}
 
